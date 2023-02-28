@@ -1,1 +1,3 @@
-web: gunicorn chattobi.wsgi --log-file -
+web: gunicorn chattobi.wsgi:application --log-file - --log-level debug
+python manage.py collectstatic --noinput
+manage.py migrate
