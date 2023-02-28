@@ -1,1 +1,1 @@
-web: gunicorn chattobi.wsgi --log-file -
+web: gunicorn django-social-app.wsgi --log-file -
